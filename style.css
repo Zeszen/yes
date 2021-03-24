@@ -1,6 +1,8 @@
 html
 {
     background-color: #222222;
+    color: #d1d1d1;
+    text-decoration: none;
 }
 
 *
@@ -44,12 +46,6 @@ html
     padding: 5px;
 }
 
-.link
-{
-    color: #d1d1d1;
-    text-decoration: none;
-}
-
 #content
 {
     float: left;
@@ -64,8 +60,7 @@ html
 .post
 {
     display: block;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 35%;
 }
 
 #leftsidebar
@@ -97,5 +92,23 @@ li, ul
 
 #leftsidemenu
 {
-    display: none;
+    animation-name: lsm;
+    animation-duration: 5s;
+}
+
+@keyframes lsm 
+{
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+.postpic
+{
+    width: 50%;
+    border-radius: 3px;
 }
