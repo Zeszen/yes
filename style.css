@@ -3,6 +3,11 @@ html
     background-color: #222222;
 }
 
+*
+{
+    box-sizing: border-box;
+}
+
 #container
 {
     width: 100%;
@@ -16,15 +21,6 @@ html
     padding: 5px;
     border-radius: 3px;
     font-size: 30px;
-    float: left;
-}
-
-#leftsidebar
-{
-    background-color: #111111;
-    width: 20px;
-    height: 100%;
-    padding: 10px;
     float: left;
 }
 
@@ -52,4 +48,54 @@ html
 {
     color: #d1d1d1;
     text-decoration: none;
+}
+
+#content
+{
+    float: left;
+    width: 90%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #292929;
+    margin: 15px;
+}
+
+.post
+{
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#leftsidebar
+{
+    background-color: #111111;
+    width: 5%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    color: #d1d1d1;
+    font-size: 30px;
+    border-radius: 0 0 5px 5px;
+}
+
+#leftsidebutton
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+li, ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 50%;
+}
+
+#leftsidemenu
+{
+    display: none;
 }
