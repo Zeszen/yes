@@ -5,6 +5,11 @@ html
     text-decoration: none;
 }
 
+body
+{
+    margin: 0px;
+}
+
 *
 {
     box-sizing: border-box;
@@ -19,9 +24,9 @@ html
 #uprightbar
 {
     background-color: #111111;
-    width: 99%;
-    padding: 5px;
-    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px 3px 3px 0;
     font-size: 30px;
     float: left;
 }
@@ -49,7 +54,7 @@ html
 #content
 {
     float: left;
-    width: 90%;
+    width: 70vw;
     height: 100%;
     padding: 15px;
     border-radius: 5px;
@@ -57,58 +62,29 @@ html
     margin: 15px;
 }
 
-.post
-{
-    display: block;
-    margin-left: 35%;
-}
-
 #leftsidebar
 {
     background-color: #111111;
-    width: 5%;
     height: 100%;
+    width: 20vw;
     float: left;
-    display: flex;
-    justify-content: center;
     color: #d1d1d1;
-    font-size: 30px;
+    font-size: 3vw;
     border-radius: 0 0 5px 5px;
+    padding-bottom: 20px;
 }
 
-#leftsidebutton
-{
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-li, ul
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 50%;
-}
-
-#leftsidemenu
-{
-    animation-name: lsm;
-    animation-duration: 5s;
-}
-
-@keyframes lsm 
-{
-    0%
-    {
-        opacity: 0;
-    }
-    100%
-    {
-        opacity: 1;
-    }
-}
 .postpic
 {
     width: 50%;
     border-radius: 3px;
+}
+
+ul
+{
+    margin: 10px;
+    padding: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
