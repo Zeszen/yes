@@ -51,6 +51,8 @@ a{
 ul, ul > li{
     list-style: none;
     display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 ul > li{
     padding: 7px 25px;
@@ -126,6 +128,7 @@ footer{
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    width: 100vw;
 }
 
 #madeBy{
