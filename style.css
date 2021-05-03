@@ -26,7 +26,10 @@ html{
 
 body{
     margin: 0;
+    padding: 0;
     background: #1f1f1f;
+    width: 100vw;
+    height: 100vh;
 }
 
 #goup
@@ -41,6 +44,9 @@ body{
     color: black;
     animation: goIn 0.5s ease-in-out;
     display: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 a{
@@ -66,11 +72,13 @@ ul > li:hover{
 header{
     background: #111;
     height: auto;
+    width: 100vw;
     box-shadow: 0px 5px 38px -21px rgba(0,0,0,0.75);
     display: flex;
     justify-content: center;
     text-align: center;
 }
+
 
 #logo{
     color: #FFFFFF;
@@ -88,8 +96,18 @@ nav{
     font-family: 'Roboto', sans-serif;
 }
 
+#small{
+    background: #1F1F1F;
+    height: auto;
+    box-shadow: 0px 5px 38px -21px rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
 section{
     height: 90vh;
+    width: 100%;
 }
 
 article{
@@ -133,6 +151,44 @@ footer{
 
 #madeBy{
     margin: auto auto 10px auto;
+}
+
+@media only screen and (max-width: 500px){
+    nav{
+        display: none;
+    }
+    #small{
+        display: block;
+    }
+    #menuSmall{
+        padding: 10px;
+        font-size: larger;
+        color: aliceblue;
+    }
+    #ulSmallBox{
+        display: none;
+    }
+    #menuSmall:hover + #ulSmallBox{
+        display: inline-block;
+    }
+    #ulSmall{
+        display: flex;
+        flex-direction: column;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    article img{
+        width: 100%;
+    }
+    .articletext{
+        width: 100%;
+        padding-top: 15px;
+    }
 }
 
 @keyframes goIn {
