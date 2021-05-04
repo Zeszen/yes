@@ -1,5 +1,9 @@
 //Get the button
 var mybutton = document.getElementById("goup");
+const chk = document.getElementById('chk');
+const soom = document.getElementById('soom');
+const dgebi = document.getElementById;
+const dgelcn = document.getElementsByClassName;
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -17,3 +21,7 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+});
