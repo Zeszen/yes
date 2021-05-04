@@ -22,14 +22,19 @@ html::-webkit-scrollbar-thumb:hover{
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
     margin: 0;
     padding: 0;
-    background: #1f1f1f;
+    background: #f1f1f1;
     width: 100vw;
     height: 100vh;
+}
+
+body.dark{
+    background: #1f1f1f;
 }
 
 #goup
@@ -45,8 +50,14 @@ body{
     animation: goIn 0.5s ease-in-out;
     display: none;
     outline: none;
-    border: none;
+    border: black 1px solid;
     cursor: pointer;
+}
+
+#goup.dark
+{
+    background-color: #FFFFFF;
+    color: black;
 }
 
 #arrowup{
@@ -56,6 +67,10 @@ body{
 
 a{
     text-decoration: none;
+    color: #111;
+}
+
+a.dark{
     color: aliceblue;
 }
 
@@ -70,12 +85,12 @@ ul > li{
     transition: all .3s ease-in-out;
 }
 ul > li:hover{
-    background: #111;
+    background: rgba(17, 17, 17, 0.2);
     border-radius: 5px;
 }
 
 header{
-    background: #111;
+    background: #f6f6f6;
     height: auto;
     width: 100vw;
     box-shadow: 0px 5px 38px -21px rgba(0,0,0,0.75);
@@ -84,19 +99,23 @@ header{
     text-align: center;
 }
 
-
 .logo{
-    color: #FFFFFF;
+    color: #111;
     font-size: 2.5rem;
     font-family: 'Courgette', cursive;
     margin: 5px;
 }
 
+.logo.dark{
+    color: aliceblue;
+}
+
 .logoIcons{
     padding: 5px;
-    color: #FFFFFF;
+    color: #111;
     font-size: 2rem;
     margin: auto;
+    cursor: pointer;
 }
 
 #chk{
@@ -105,7 +124,7 @@ header{
 }
 
 nav{
-    background: #1F1F1F;
+    background: #ffffff;
     height: auto;
     box-shadow: 0px 5px 38px -21px rgba(0,0,0,0.75);
     display: flex;
@@ -114,11 +133,14 @@ nav{
 }
 
 #small{
-    background: #1F1F1F;
+    background: #fff;
     height: auto;
     box-shadow: 0px 5px 38px -21px rgba(0,0,0,0.75);
     display: none;
     font-family: 'Roboto', sans-serif;
+}
+#small.dark{
+    background: #1F1F1F;
 }
 
 section{
@@ -127,7 +149,7 @@ section{
 }
 
 article{
-    background: #292929;
+    background: #fff;
     width: 90vw;
     margin: 50px auto;
     border-radius: 10px;
@@ -138,7 +160,18 @@ article{
     transition: all .2s ease-in-out;
 }
 
+article.dark{
+    background: #292929;
+}
+
 article:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: transparent solid 1px;
+}
+
+article.dark:hover{
     border: #CDFC08 1px solid;
 }
 
@@ -155,12 +188,17 @@ article img{
 
 .articletext::before{
     content: '\25B6';
+    color: #111;
+}
+.articletext.dark::before{
+    content: '\25B6';
+    color: #fff;
 }
 
 footer{
     background: #111111;
     height: auto;
-    min-height: 25vh;
+    min-height: 20vh;
     bottom: 0;
     display: inline-block;
     align-items: center;    
@@ -168,6 +206,22 @@ footer{
     font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 100vw;
+}
+
+#footerhr{
+    border: dotted 1px;
+    width: 50%;
+}
+
+footer > ul > li a{
+    color: #f1f1f1;
+}
+footer > ul > li:hover a{
+    color: #000;
+}
+
+.footli:hover{
+    background: #FFFFFF;
 }
 
 #madeBy{
@@ -185,6 +239,12 @@ footer{
         display: none;
     }
     #menuSmall{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        color: #111;
+    }
+    #menuSmall.dark{
         display: flex;
         justify-content: center;
         padding: 10px;
