@@ -13,10 +13,21 @@
     </head>
     <body>
         <button onclick="topFunction()" id="goup" title="Go to top">
-            &uarr;
+            <div id="arrowup">&uarr;</div>
         </button>
         <header>
-            <span id="logo">Zeszen</span>
+            <span class="logoIcons">
+                <a href="all.html">
+                    <i class="fas fa-list"></i>
+                </a>
+            </span>
+            <span class="logo">Zeszen</span>
+            <input type="checkbox" id="chk">
+            <label class="logoIcons" for="chk">
+                <span>
+                    <i class="fas fa-adjust"></i>
+                </span>    
+            </label>
         </header>
         <nav>
             <ul>
@@ -38,13 +49,13 @@
             </div>
         </nav>
         <section>
-            <article id="PvZ">
+            <article id="pvz">
                 <img src="logo.png">
                 <div class="articletext">
                     <a href="pvz.html">Plants vs Zombie</a>
                 </div>
             </article>
-            <article id="FNaE">
+            <article id="fnae">
                 
             </article>
         </section>
